@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+  <style>
+    body {
+      margin: 0;
+      padding: 0;
+      margin-top: 250px;
+      justify-content: center;
+      align-items: center;
+      background-color: #56738C;
+      min-height: auto;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    }
+
+    .login-container {
+      display: flex;
+      background-color: #fff;
+      border-radius: 10px;
+      overflow: hidden;
+      box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+      max-width: 800px;
+      height: 450px;
+      margin: 0 auto;
+    }
+
+    .left-side {
+      flex: 1;
+      background: url('sete.png') center/cover;
+    }
+
+    .right-side {
+      flex: 1;
+      padding: 20px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .login-form {
+      max-width: 400px;
+      margin: 0 auto;
+      text-align: center;
+      margin-bottom: 20%;
+    }
+
+    .login-header {
+      font-weight: bold;
+      font-size: 24px;
+      margin-bottom: 20px;
+      padding-right: 100%;
+      padding-bottom: 0%;
+      color: #56738C;
+    }
+
+    .icon-container {
+      display: flex;
+      align-items: center;
+      margin-bottom: 16px;
+      border-bottom: 3px solid #56738C;
+      padding-top: 10px;
+    }
+
+    .icon-container input {
+      width: 100%;
+      padding: 10px;
+      margin-bottom: 6px;
+      font-size: 16px;
+      border: none;
+      box-sizing: border-box;
+    }
+
+    .icon-container i {
+      margin-right: 10px;
+      color: #56738C;
+      cursor: pointer;
+    }
+
+    .toggle-password {
+      background: none;
+      border: none;
+      color: #254969;
+      cursor: pointer;
+    }
+
+    .login-form label {
+      display: block;
+      margin-bottom: 8px;
+      font-weight: bold;
+      font-size: 18px;
+      color: #56738C;
+    }
+
+    .login-form button {
+      width: 49%;
+      padding: 9px;
+      font-size: 16px;
+      background-color: #1d476d;
+      color: #ffffff;
+      border: none;
+      border-radius: 15px;
+      cursor: pointer;
+      margin-bottom: 20px;
+    }
+
+    .login-options {
+      display: flex;
+      justify-content: space-between;
+      margin-top: 20px;
+    }
+
+    .forgot-password {
+      font-size: 14px;
+    }
+
+    .login-options a {
+      text-decoration: none;
+      color: #7395b3;
+      font-weight: bold;
+    }
+  </style>
+</head>
+<body>
+  <div class="login-container">
+    <div class="left-side"></div>
+    <div class="right-side">
+      <div class="login-form">
+        <div class="login-header">Login</div>
+
+        <div class="icon-container">
+          <i class="fas fa-user"></i>
+          <input type="text" id="username" name="username" placeholder="ID CARD" required>
+        </div>
+
+        <div class="icon-container">
+          <i class="fas fa-lock"></i>
+          <input type="password" id="password" name="password" placeholder="Password" required>
+        </div>
+
+        <button type="submit">Login</button>
+        <button type="submit">Register</button>
+
+        <div class="login-options">
+          <a href="#" class="forgot-password">Forgot Password?</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>
